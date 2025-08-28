@@ -28,6 +28,16 @@ vercelを使用しているので、自動でデプロイされます。
 
 テキストファイルは、`<img src="https://sphylics.vercel.com/text/パス">`で使用できます。
 
+### コードファイル
+
+共通化する`css`ファイルや`js`ファイルを置きます。
+
+Javascriptは、`<script src="https://sphylics.vercel.app/src/パス" defer></script>`です。
+
+- `markdown.js` sphylicsのデフォルトマークダウンです。`import.js`を使用して読み込みます。
+
+cssは、` <link rel="stylesheet" href="https://sphylics.vercel.app/src/パス">`です。
+
 ## ライセンス
 
 [ライセンス](licence.md)
