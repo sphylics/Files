@@ -36,52 +36,8 @@
   --shadow: rgba(0, 0, 0, 0.3);
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  line-height: 1.7;
-  color: var(--text-color);
-  background-color: var(--bg-color);
-  margin: 0;
-  padding: 20px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  background: var(--bg-color);
-  padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px var(--shadow);
-}
-
-.theme-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background: var(--link-color);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  font-size: 20px;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 10px var(--shadow);
-}
-
-.theme-toggle:hover {
-  background: var(--link-hover);
-  transform: scale(1.1);
-}
-
 /* Headings */
-h1 {
+section h1 {
   font-size: 2.5rem;
   font-weight: 700;
   margin: 0 0 1.5rem 0;
@@ -90,7 +46,7 @@ h1 {
   padding-bottom: 0.5rem;
 }
 
-h2 {
+section h2 {
   font-size: 2rem;
   font-weight: 600;
   margin: 2rem 0 1rem 0;
@@ -99,28 +55,28 @@ h2 {
   padding-bottom: 0.3rem;
 }
 
-h3 {
+section h3 {
   font-size: 1.5rem;
   font-weight: 600;
   margin: 1.5rem 0 0.8rem 0;
   color: var(--text-color);
 }
 
-h4 {
+setction h4 {
   font-size: 1.25rem;
   font-weight: 600;
   margin: 1.25rem 0 0.7rem 0;
   color: var(--text-color);
 }
 
-h5 {
+section h5 {
   font-size: 1.1rem;
   font-weight: 600;
   margin: 1rem 0 0.6rem 0;
   color: var(--text-color);
 }
 
-h6 {
+section h6 {
   font-size: 1rem;
   font-weight: 600;
   margin: 0.8rem 0 0.5rem 0;
@@ -128,59 +84,59 @@ h6 {
 }
 
 /* Paragraph */
-p {
+section p {
   margin: 0 0 1.2rem 0;
   font-size: 1rem;
   line-height: 1.8;
 }
 
 /* Lists */
-ul,
-ol {
+section ul,
+section ol {
   margin: 0 0 1.2rem 0;
   padding-left: 2rem;
 }
 
-li {
+section li {
   margin: 0.3rem 0;
   line-height: 1.7;
 }
 
-ul li {
+section ul li {
   position: relative;
 }
 
-ul li::marker {
+section ul li::marker {
   color: var(--link-color);
 }
 
-ol li::marker {
+section ol li::marker {
   color: var(--link-color);
   font-weight: 600;
 }
 
 /* Links */
-a {
+section a {
   color: var(--link-color);
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: all 0.2s ease;
 }
 
-a:hover {
+section a:hover {
   color: var(--link-hover);
   border-bottom-color: var(--link-hover);
 }
 
 /* Bold */
-b,
-strong {
+section b,
+section strong {
   font-weight: 600;
   color: var(--text-color);
 }
 
 /* Code */
-code {
+section code {
   background: var(--code-bg);
   color: var(--text-color);
   padding: 0.2rem 0.4rem;
@@ -191,7 +147,7 @@ code {
 }
 
 /* Pre */
-pre {
+section pre {
   background: var(--pre-bg);
   color: var(--pre-text);
   padding: 1.5rem;
@@ -204,7 +160,7 @@ pre {
   box-shadow: 0 2px 4px var(--shadow);
 }
 
-pre code {
+section pre code {
   background: none;
   color: inherit;
   padding: 0;
@@ -212,32 +168,32 @@ pre code {
 }
 
 /* Tables */
-table {
+section table {
   width: 100%;
   border-collapse: collapse;
   margin: 1.2rem 0;
   font-size: 0.95rem;
 }
 
-th,
-td {
+section th,
+section td {
   padding: 0.8rem 1rem;
   text-align: left;
   border-bottom: 1px solid var(--border-color);
 }
 
-th {
+section th {
   background: var(--code-bg);
   font-weight: 600;
   color: var(--text-color);
 }
 
-tr:nth-child(even) {
+section tr:nth-child(even) {
   background: var(--table-stripe);
 }
 
 /* Blockquote */
-blockquote {
+section blockquote {
   margin: 1.5rem 0;
   padding: 1rem 1.5rem;
   background: var(--blockquote-bg);
@@ -247,12 +203,12 @@ blockquote {
   color: var(--text-secondary);
 }
 
-blockquote p {
+section blockquote p {
   margin: 0;
 }
 
 /* HR */
-hr {
+section hr {
   border: none;
   height: 2px;
   background: var(--hr-color);
@@ -261,7 +217,7 @@ hr {
 }
 
 /* Address */
-address {
+section address {
   font-style: italic;
   color: var(--text-secondary);
   margin: 1.2rem 0;
@@ -271,7 +227,7 @@ address {
 }
 
 /* Images */
-img {
+section img {
   max-width: 100%;
   height: auto;
   border-radius: 6px;
@@ -280,7 +236,7 @@ img {
 }
 
 /* Video */
-video {
+section video {
   max-width: 100%;
   height: auto;
   border-radius: 6px;
@@ -288,51 +244,34 @@ video {
 }
 
 /* Definition Lists */
-dl {
+section dl {
   margin: 1.2rem 0;
 }
 
-dt {
+section dt {
   font-weight: 600;
   color: var(--text-color);
   margin: 0.8rem 0 0.3rem 0;
 }
 
-dd {
+section dd {
   margin: 0 0 0.8rem 1.5rem;
   color: var(--text-secondary);
 }
 
 /* Deleted text */
-del {
+section del {
   color: var(--text-secondary);
   text-decoration: line-through;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .container {
-    padding: 20px;
-    margin: 10px;
-  }
-
-  h1 {
+  section h1 {
     font-size: 2rem;
   }
 
-  h2 {
+  section h2 {
     font-size: 1.5rem;
-  }
-
-  body {
-    padding: 10px;
-  }
-
-  .theme-toggle {
-    top: 10px;
-    right: 10px;
-    width: 40px;
-    height: 40px;
-    font-size: 16px;
   }
 }
