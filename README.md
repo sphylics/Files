@@ -14,9 +14,11 @@ vercelを使用しているので、自動でデプロイされます。
 
 画像ファイルは、`<img src="https://sphylics.vercel.com/image/パス">`で使用できます。
 
-|ファイル名|説明|
-|`sphylics.png`|sphylicsのロゴ|
-|`symbol.png`|シンボルのロゴ|
+- `logo.png` sphylicsのロゴ
+- `symbol.png` sphylicsのシンボル(全体のロゴ)
+- `exit.png` チャット退出時のアイコン
+- `new.png` チャット新規作成アイコン
+- `talk.png` チャットにメッセージを送信するアイコン
 
 ### 動画ファイル
 
