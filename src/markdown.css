@@ -6,10 +6,10 @@
   --border-color: #e0e7ed;
   --code-bg: #f6f8fa;
   --code-border: #e1e4e8;
-  --link-color: #55c500;
-  --link-hover: #449d00;
+  --link-color: #3362e4;
+  --link-hover: #5835d6;
   --blockquote-bg: #f6f8fa;
-  --blockquote-border: #55c500;
+  --blockquote-border: #5349db;
   --table-stripe: #f6f8fa;
   --pre-bg: #2d3748;
   --pre-text: #e2e8f0;
@@ -62,7 +62,7 @@ section h3 {
   color: var(--text-color);
 }
 
-setction h4 {
+section h4 {
   font-size: 1.25rem;
   font-weight: 600;
   margin: 1.25rem 0 0.7rem 0;
